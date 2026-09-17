@@ -1,3 +1,5 @@
+const assetPath = process.env.NODE_ENV === "production" ? "/vishal-portfolio" : "";
+
 export default function Home() {
   return (
     <>
@@ -28,11 +30,11 @@ export default function Home() {
     </div>
     <div className="cta-row">
       <a href="mailto:bhardwaj.vishal0614@gmail.com" className="btn btn-primary">Get in touch</a>
-      <a href="/Vishal-Bhardwaj-CV.pdf" download="Vishal-Bhardwaj-CV.pdf" className="btn btn-soft">Download CV</a>
+      <a href={`${assetPath}/Vishal-Bhardwaj-CV.pdf`} download="Vishal-Bhardwaj-CV.pdf" className="btn btn-soft">Download CV</a>
       <a href="https://www.linkedin.com/in/vishal-bhardwaj-778b4426a" target="_blank" rel="noopener" className="btn btn-ghost">View LinkedIn</a>
     </div>
     </div>
-    <div className="hero-photo"><div className="frame"><img src="/vishal.jpg" alt="Portrait of Vishal Bhardwaj" /></div></div>
+    <div className="hero-photo"><div className="frame"><img src={`${assetPath}/vishal.jpg`} alt="Portrait of Vishal Bhardwaj" /></div></div>
   </header>
 
   <section id="story" style={{ paddingTop: "12px" }}>
@@ -178,7 +180,7 @@ export default function Home() {
     <div className="pgrid">
 
       <div className="pcard">
-        <div className="cover"><img src="/enlytical-dashboard.jpg" alt="Enlytical eCommerce Intelligence Dashboard — five module screens" /></div>
+        <div className="cover"><img src={`${assetPath}/enlytical-dashboard.jpg`} alt="Enlytical eCommerce Intelligence Dashboard — five module screens" /></div>
         <div className="pbody">
           <div className="period">Jul 2025 – Aug 2025</div>
           <h4>eCommerce Intelligence Dashboard</h4>
@@ -189,7 +191,7 @@ export default function Home() {
       </div>
 
       <div className="pcard">
-        <div className="cover"><img src="/enlytical-website.jpg" alt="Enlytical homepage redesign shown on a laptop" /></div>
+        <div className="cover"><img src={`${assetPath}/enlytical-website.jpg`} alt="Enlytical homepage redesign shown on a laptop" /></div>
         <div className="pbody">
           <div className="period">Mar 2025 – Jun 2025</div>
           <h4>AI-Powered eCommerce Website Redesign</h4>
@@ -200,7 +202,7 @@ export default function Home() {
       </div>
 
       <div className="pcard">
-        <div className="cover"><img src="/hdfc.jpg" alt="HDFC Bank mobile app redesign case study cover" /></div>
+        <div className="cover"><img src={`${assetPath}/hdfc.jpg`} alt="HDFC Bank mobile app redesign case study cover" /></div>
         <div className="pbody">
           <div className="period">Banking · mobile</div>
           <h4>HDFC Bank App Redesign</h4>
@@ -211,7 +213,7 @@ export default function Home() {
       </div>
 
       <div className="pcard">
-        <div className="cover"><img src="/serenemom.jpg" alt="Serene MOM pregnancy tracking app cover" /></div>
+        <div className="cover"><img src={`${assetPath}/serenemom.jpg`} alt="Serene MOM pregnancy tracking app cover" /></div>
         <div className="pbody">
           <div className="period">May 2024 – Sep 2024</div>
           <h4>Serene MOM — Pregnancy Tracking App</h4>
